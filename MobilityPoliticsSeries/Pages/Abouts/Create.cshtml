@@ -5,44 +5,33 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+    <div class="text-center">
+        <h1 class="display-4">About The Series</h1>
+        <p>
+            <br>
+            “Human mobility, whatever its scale, is often controversial. Hence it carries with it the potential for politics. A core feature of mobility politics is the tension between the desire to maximize the social and economic benefits of migration, and the pressures to restrict movement. Transnational communities, global instability, advances in transportation and communication, and concepts of ‘smart borders’ and ‘migration management’ are just a few of the phenomena transforming the landscape of migration today. The tension between openness and restriction raises important questions about how different types of policies and politics come to life and influence mobility.”
+            <br><br>
+            Mobility & Politics invites original, theoretically, and empirically informed studies for academic and policy-oriented debates. Authors examine issues such as refugees and displacement, migration and citizenship, security and cross-border movements, (post-)colonialism and mobility, and transnational movements and cosmopolitics.
+            <br><br>
+            If you are interested in contributing to the series, we invite submissions in the range of 20,000 to 50,000 words.
+        </p>
+        <div class="form-group">
+            <input type="submit" value="Click here for more information about the series" class="btn btn-primary" />
+            <input type="submit" value="Click here to download a proposal form" class="btn btn-primary" />
+        </div>
+        <p>
+            <br>
+            To contact the series editors, you can write to martin.geiger@carleton.ca
+            <br><br>
+            Our series is published by Palgrave Macmillan in their unique “Pivot” format. Learn more about this format
+            
+       
+        </p>
+        
 
-<h4>About</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="About.Title" class="control-label"></label>
-                <input asp-for="About.Title" class="form-control" />
-                <span asp-validation-for="About.Title" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="About.ReleaseDate" class="control-label"></label>
-                <input asp-for="About.ReleaseDate" class="form-control" />
-                <span asp-validation-for="About.ReleaseDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="About.Genre" class="control-label"></label>
-                <input asp-for="About.Genre" class="form-control" />
-                <span asp-validation-for="About.Genre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="About.Price" class="control-label"></label>
-                <input asp-for="About.Price" class="form-control" />
-                <span asp-validation-for="About.Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
     </div>
-</div>
 
-<div>
-    <a asp-page="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
