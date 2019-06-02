@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using MobilityPoliticsSeries.Models;
 
 namespace MobilityPoliticsSeries.Models
 {
@@ -14,5 +15,7 @@ namespace MobilityPoliticsSeries.Models
         }
 
         public DbSet<MobilityPoliticsSeries.Models.About> About { get; set; }
+
+        public DbSet<MobilityPoliticsSeries.Models.Editor> Editor { get; set; }
     }
 }

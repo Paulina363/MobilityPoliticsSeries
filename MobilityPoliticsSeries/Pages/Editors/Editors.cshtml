@@ -1,0 +1,23 @@
+﻿@page
+@model MobilityPoliticsSeries.Pages.Editors.EditorsModel
+
+@{
+    ViewData["Title"] = "Editors";
+}
+
+<h1 class="display-4">About The Editors</h1>
+
+<p>
+    Learn more about the editors of Mobility & Politics by clicking their profiles below
+
+    <div>
+        <a asp-page="William_Walters">William Walters</a>
+        <a asp-page="Parvati_Raghuram">Parvati_Raghuram</a>
+        <a asp-page="Martin_Geiger">Martin Geiger</a>
+    </div>
+
+</p>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
