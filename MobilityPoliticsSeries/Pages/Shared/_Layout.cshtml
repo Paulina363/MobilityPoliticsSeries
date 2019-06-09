@@ -1,7 +1,9 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <!-- encodes characters -->
     <meta charset="utf-8" />
+    <!-- accounts for different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MobilityPoliticsSeries</title>
 
@@ -9,11 +11,12 @@
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     </environment>
     <environment exclude="Development">
+        <!-- load bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
               crossorigin="anonymous"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
     </environment>
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -38,10 +41,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Editors/Editors">Editors</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Abouts/Create">Publications</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Publisheds/Publisheds">Publications</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Abouts/Create">Authors</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Authors/Authors">Authors</a>
                         </li>
                     </ul>
                 </div>

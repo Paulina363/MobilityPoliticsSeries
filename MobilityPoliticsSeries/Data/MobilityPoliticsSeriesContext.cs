@@ -17,5 +17,9 @@ namespace MobilityPoliticsSeries.Models
         public DbSet<MobilityPoliticsSeries.Models.About> About { get; set; }
 
         public DbSet<MobilityPoliticsSeries.Models.Editor> Editor { get; set; }
+
+        public DbSet<MobilityPoliticsSeries.Models.Author> Author { get; set; }
+
+        public DbSet<MobilityPoliticsSeries.Models.Published> Published { get; set; }
     }
 }

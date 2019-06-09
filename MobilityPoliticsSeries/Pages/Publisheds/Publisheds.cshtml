@@ -1,0 +1,15 @@
+﻿@page
+@model MobilityPoliticsSeries.Pages.Publisheds.PublishedsModel
+
+@{
+    ViewData["Title"] = "Publisheds";
+}
+
+<h1 class="display-4">Published Works</h1>
+
+<button type="button" onclick="gender_temporary_work_and_migration_management">Back to List</button>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
